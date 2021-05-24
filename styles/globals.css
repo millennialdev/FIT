@@ -1,11 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@font-face {
+  font-family: 'Aileron';
+  src: url(../src/assets/fonts/aileron/Aileron-UltraLight.otf);
+  font-style: normal;
+  font-weight: 100;
+}
+@font-face {
+  font-family: 'Aileron';
+  src: url(../src/assets/fonts/aileron/Aileron-UltraLightItalic.otf);
+  font-style: italic;
+  font-weight: 100;
+}
+@font-face {
+  font-family: 'Aileron';
+  src: url(../src/assets/fonts/aileron/Aileron-Thin.otf);
+  font-style: normal;
+  font-weight: 200;
+}
+@font-face {
+  font-family: 'Aileron';
+  src: url(../src/assets/fonts/aileron/Aileron-ThinItalic.otf);
+  font-style: italic;
+  font-weight: 200;
+}
+@font-face {
+  font-family: 'Aileron';
+  src: url(../src/assets/fonts/aileron/Aileron-Light.otf);
+  font-style: normal;
+  font-weight: 300;
+}
+@font-face {
+  font-family: 'Aileron';
+  src: url(../src/assets/fonts/aileron/Aileron-LightItalic.otf);
+  font-style: italic;
+  font-weight: 300;
+}
+@font-face {
+  font-family: 'Aileron';
+  src: url(../src/assets/fonts/aileron/Aileron-Regular.otf);
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Aileron';
+  src: url(../src/assets/fonts/aileron/Aileron-Italic.otf);
+  font-style: italic;
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Aileron';
+  src: url(../src/assets/fonts/aileron/Aileron-SemiBold.otf);
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'Aileron';
+  src: url(../src/assets/fonts/aileron/Aileron-SemiBoldItalic.otf);
+  font-style: italic;
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'Aileron';
+  src: url(../src/assets/fonts/aileron/Aileron-Bold.otf);
+  font-style: normal;
+  font-weight: 600;
+}
+@font-face {
+  font-family: 'Aileron';
+  src: url(../src/assets/fonts/aileron/Aileron-BoldItalic.otf);
+  font-style: italic;
+  font-weight: 600;
+}
+@font-face {
+  font-family: 'Aileron';
+  src: url(../src/assets/fonts/aileron/Aileron-Heavy.otf);
+  font-style: normal;
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'Aileron';
+  src: url(../src/assets/fonts/aileron/Aileron-HeavyItalic.otf);
+  font-style: italic;
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'Aileron';
+  src: url(../src/assets/fonts/aileron/Aileron-Black.otf);
+  font-style: normal;
+  font-weight: 800;
+}
+@font-face {
+  font-family: 'Aileron';
+  src: url(../src/assets/fonts/aileron/Aileron-BlackItalic.otf);
+  font-style: italic;
+  font-weight: 800;
+}
+
 html,
 body {
   background: #1b1b1b;
   color: #f5f0f0;
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  /* font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; */
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Aileron', sans;
 }
 
 a {
@@ -15,4 +124,12 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+::selection {
+  background: #a491ba; /* WebKit/Blink Browsers */
+}
+
+::-moz-selection {
+  background: #a491ba; /* Gecko Browsers */
 }

@@ -12,4 +12,9 @@ export const Container = styled.div`
   padding: 25px;
   text-align: center;
   font-family: 'Roboto', sans-serif;
+
+  @media only screen and (max-width: 460px) {
+    font-size: clamp(0.7rem, 3.5vw, 0.9rem);
+    padding: 25px 1px 25px 1px;
+  }
 `;

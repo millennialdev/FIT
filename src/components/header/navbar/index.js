@@ -10,6 +10,8 @@ import {
   StyledLink,
   UnStyledLink,
   Svg,
+  MobileIcon,
+  SvgMobile,
 } from './navbarStyles';
 import LogoImage from '../../../assets/logo/fit_logo_white_cropped.png';
 import LoginImage from '../../../assets/icons/user.svg';
@@ -23,6 +25,52 @@ const Navbar = () => {
             <Logo src={LogoImage} alt='logo' height='50px' />
           </UnStyledLink>
         </Link>
+        <SvgMobile
+          id='Layer_1'
+          enable-background='new 0 0 512 512'
+          height='512'
+          viewBox='0 0 512 512'
+          width='512'
+          xmlns='http://www.w3.org/2000/svg'
+        >
+          <g>
+            <g id='Menu_1_'>
+              <path
+                d='M12.03,120.303h360.909c6.641,0,12.03-5.39,12.03-12.03c0-6.641-5.39-12.03-12.03-12.03H12.03
+			c-6.641,0-12.03,5.39-12.03,12.03C0,114.913,5.39,120.303,12.03,120.303z'
+              />
+              <path
+                d='M372.939,180.455H12.03c-6.641,0-12.03,5.39-12.03,12.03s5.39,12.03,12.03,12.03h360.909c6.641,0,12.03-5.39,12.03-12.03
+			S379.58,180.455,372.939,180.455z'
+              />
+              <path
+                d='M372.939,264.667H132.333c-6.641,0-12.03,5.39-12.03,12.03c0,6.641,5.39,12.03,12.03,12.03h240.606
+			c6.641,0,12.03-5.39,12.03-12.03C384.97,270.056,379.58,264.667,372.939,264.667z'
+              />
+            </g>
+            <g></g>
+            <g></g>
+            <g></g>
+            <g></g>
+            <g></g>
+            <g></g>
+          </g>
+          <g></g>
+          <g></g>
+          <g></g>
+          <g></g>
+          <g></g>
+          <g></g>
+          <g></g>
+          <g></g>
+          <g></g>
+          <g></g>
+          <g></g>
+          <g></g>
+          <g></g>
+          <g></g>
+          <g></g>
+        </SvgMobile>
         <LinksContainer>
           <List>
             <NavItem>

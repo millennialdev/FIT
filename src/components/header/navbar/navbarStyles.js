@@ -1,7 +1,7 @@
 // looks like right around @638px is where we're going to want to implement the mobile nav...
 
 import styled from 'styled-components';
-import Icon from './Icon';
+import Icon from '../../icon';
 
 export const Header = styled.header`
   width: 100%;
@@ -14,6 +14,10 @@ export const Nav = styled.nav`
   margin: 2em auto 0 auto;
   display: flex;
   flex-direction: row;
+
+  @media only screen and (max-width: 638px) {
+    width: 100%;
+  }
 `;
 
 export const Logo = styled.img`
@@ -28,6 +32,10 @@ export const LinksContainer = styled.div`
 
   @media only screen and (max-width: 1014px) {
     flex-direction: column;
+  }
+
+  @media only screen and (max-width: 638px) {
+    display: none;
   }
 `;
 
@@ -99,5 +107,25 @@ export const Svg = styled(Icon)`
 
   &:hover {
     fill: white;
+  }
+`;
+
+export const SvgMobile = styled(Icon)`
+  display: none;
+
+  @media screen and (max-width: 638px) {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-3%, 74%);
+    width: 6rem;
+    height: 6rem;
+    fill: #f5f0f0;
+    cursor: pointer;
+
+    &:hover {
+      fill: white;
+    }
   }
 `;

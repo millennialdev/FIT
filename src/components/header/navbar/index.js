@@ -24,7 +24,7 @@ const Navbar = ({ toggle }) => {
         </Link>
         <SvgMobile onClick={toggle} />
         <LinksContainer>
-          <List>
+          <List style={{ marginLeft: 'calc(50px - 1.6875em)' }}>
             <NavItem>
               <Link href='/locations' passHref>
                 <StyledLink>Locations</StyledLink>

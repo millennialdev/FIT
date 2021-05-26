@@ -54,6 +54,7 @@ export const List = styled.ul`
   justify-content: space-evenly;
   list-style: none;
   margin: 0;
+  padding: 0;
 `;
 
 export const NavItem = styled.li`
@@ -67,7 +68,7 @@ export const StyledLink = styled.a`
   font-weight: 400;
   font-size: 24px;
 
-  margin: 0 calc(1.6875em / 2);
+  margin: 0 0 0 1.6875em;
   position: relative;
   cursor: pointer;
   transition: all 0.1s;

@@ -18,6 +18,11 @@ export const SidebarContainer = styled.aside`
 
 export const CloseIcon = styled(CgClose)`
   color: #f5f0f0;
+  transition: all 0.3s ease-in;
+
+  &:hover {
+    color: #b3c2ab;
+  }
 `;
 
 export const Icon = styled.div`

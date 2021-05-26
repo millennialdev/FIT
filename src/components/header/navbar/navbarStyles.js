@@ -29,6 +29,7 @@ export const Logo = styled.img`
 
   @media only screen and (max-width: 638px) {
     height: 35px;
+    margin-left: 1em;
   }
 `;
 
@@ -38,7 +39,7 @@ export const LinksContainer = styled.div`
   flex-direction: row;
   justify-content: space-between;
 
-  @media only screen and (max-width: 1014px) {
+  @media only screen and (max-width: 1260px) {
     flex-direction: column;
   }
 
@@ -55,15 +56,22 @@ export const List = styled.ul`
   margin: 0;
 `;
 
-export const NavItem = styled.li``;
+export const NavItem = styled.li`
+  @media only screen and (max-width: 1260px) {
+    margin: 0 0 0.75em 0;
+  }
+`;
 
 export const StyledLink = styled.a`
-  margin: 0 1em;
+  font-family: 'Aileron', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+
+  margin: 0 calc(1.6875em / 2);
   position: relative;
   cursor: pointer;
   transition: all 0.1s;
   text-decoration: none;
-  font-weight: 400;
   transition: all 333ms ease-in;
   white-space: nowrap;
 
@@ -93,7 +101,9 @@ export const StyledLink = styled.a`
     transform: scaleX(1);
   }
 
-  @media only screen and (max-width: 1014px) {
+  @media only screen and (max-width: 1260px) {
+    font-size: 18px;
+
     &:after {
       bottom: -6px;
     }
@@ -101,7 +111,7 @@ export const StyledLink = styled.a`
 `;
 
 export const UnStyledLink = styled.a`
-  margin: auto 1em auto 1em;
+  /* margin: auto 1em auto 1em; */
   border-top-right-radius: 10px;
   position: relative;
   cursor: pointer;

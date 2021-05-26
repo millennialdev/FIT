@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import { CgClose } from 'react-icons/cg';
-import svgIcon from '../../icon';
 
 export const SidebarContainer = styled.aside`
   position: fixed;
@@ -38,12 +37,12 @@ export const SidebarWrapper = styled.div`
 export const SidebarMenu = styled.ul`
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(8, 60px);
+  grid-template-rows: repeat(7, 60px);
   text-align: center;
   padding-left: 0px;
 
   @media screen and (max-width: 480px) {
-    grid-template-rows: repeat(8, 40px);
+    grid-template-rows: repeat(7, 50px);
   }
 `;
 
@@ -66,6 +65,10 @@ export const SidebarLink = styled.button`
   &:hover {
     color: #98a692;
     transition: all 0.2s ease-in-out;
+  }
+
+  @media screen and (max-width: 480px) {
+    font-size: 22px;
   }
 `;
 
@@ -94,12 +97,9 @@ export const SidebarRoute = styled.button`
     background: #f5f0f0;
     color: #1b1b1b;
   }
-`;
 
-export const Svg = styled(svgIcon)`
-  width: 16px;
-  height: 16px;
-  margin-left: 0.75em;
-  fill: #1b1b1b;
-  transform: translateY(1.5px);
+  @media screen and (max-width: 480px) {
+    padding: 10px 48px;
+    font-size: 14px;
+  }
 `;

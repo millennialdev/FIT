@@ -1,5 +1,11 @@
 import styled from 'styled-components';
-import Icon from '../../icon';
+import { IoPersonOutline, IoMenuOutline } from 'react-icons/io5';
+
+export const LoginLogo = styled(IoPersonOutline)`
+  color: #f5f0f0;
+  margin-left: 0.5em;
+  transform: translateY(0.1rem);
+`;
 
 export const Header = styled.header`
   width: 100%;
@@ -101,18 +107,7 @@ export const UnStyledLink = styled.a`
   cursor: pointer;
 `;
 
-export const Svg = styled(Icon)`
-  width: 12px;
-  height: 12px;
-  margin-left: 0.5em;
-  fill: #f5f0f0;
-
-  &:hover {
-    fill: white;
-  }
-`;
-
-export const SvgMobile = styled(Icon)`
+export const SvgMobile = styled(IoMenuOutline)`
   display: none;
 
   @media screen and (max-width: 638px) {
@@ -120,14 +115,13 @@ export const SvgMobile = styled(Icon)`
     position: absolute;
     top: 0;
     right: 0;
-    transform: translate(-30%, 173%);
+    transform: translate(-30%, 159%);
     width: 3rem;
     height: 3rem;
     fill: #f5f0f0;
     cursor: pointer;
-
-    &:hover {
-      fill: white;
-    }
+  }
+  &:hover {
+    fill: white;
   }
 `;

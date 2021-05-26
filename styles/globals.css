@@ -127,9 +127,11 @@ a {
 }
 
 ::selection {
-  background: #a491ba; /* WebKit/Blink Browsers */
+  background: hsl(268deg, 23%, 75%); /* WebKit/Blink Browsers */
+  color: #1b1b1b;
 }
 
 ::-moz-selection {
-  background: #a491ba; /* Gecko Browsers */
+  background: hsl(268deg, 23%, 75%); /* Gecko Browsers */
+  color: #1b1b1b;
 }

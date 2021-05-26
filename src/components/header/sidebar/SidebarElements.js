@@ -63,7 +63,7 @@ export const SidebarLink = styled.button`
   border: none;
 
   &:hover {
-    color: #98a692;
+    color: #bc988a;
     transition: all 0.2s ease-in-out;
   }
 

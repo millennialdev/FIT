@@ -102,8 +102,4 @@ export const Svg = styled(svgIcon)`
   margin-left: 0.75em;
   fill: #1b1b1b;
   transform: translateY(1.5px);
-
-  &:hover {
-    fill: white;
-  }
 `;

@@ -73,34 +73,34 @@ const Navbar = ({ toggle }) => {
           <List>
             <NavItem>
               <Link href='/locations' passHref>
-                <StyledLink title='Locations'>Locations</StyledLink>
+                <StyledLink>Locations</StyledLink>
               </Link>
             </NavItem>
             <NavItem>
               <Link href='/training' passHref>
-                <StyledLink title='Training'>Training</StyledLink>
+                <StyledLink>Training</StyledLink>
               </Link>
             </NavItem>
             <NavItem>
               <Link href='/ideas' passHref>
-                <StyledLink title='Ideas'>Ideas</StyledLink>
+                <StyledLink>Ideas</StyledLink>
               </Link>
             </NavItem>
             <NavItem>
               <Link href='/about' passHref>
-                <StyledLink title='About'>About</StyledLink>
+                <StyledLink>About</StyledLink>
               </Link>
             </NavItem>
           </List>
           <List>
             <NavItem>
               <Link href='/saved' passHref>
-                <StyledLink title='Saved'>Saved</StyledLink>
+                <StyledLink>Saved</StyledLink>
               </Link>
             </NavItem>
             <NavItem>
               <Link href='/contact' passHref>
-                <StyledLink title='Contertertertact Us'>Contact Us</StyledLink>
+                <StyledLink>Contact Us</StyledLink>
               </Link>
             </NavItem>
             <NavItem>

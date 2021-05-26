@@ -1,5 +1,3 @@
-// looks like right around @638px is where we're going to want to implement the mobile nav...
-
 import styled from 'styled-components';
 import Icon from '../../icon';
 
@@ -22,6 +20,10 @@ export const Nav = styled.nav`
 
 export const Logo = styled.img`
   height: 50px;
+
+  @media only screen and (max-width: 638px) {
+    height: 35px;
+  }
 `;
 
 export const LinksContainer = styled.div`
@@ -118,9 +120,9 @@ export const SvgMobile = styled(Icon)`
     position: absolute;
     top: 0;
     right: 0;
-    transform: translate(-3%, 74%);
-    width: 6rem;
-    height: 6rem;
+    transform: translate(-30%, 173%);
+    width: 3rem;
+    height: 3rem;
     fill: #f5f0f0;
     cursor: pointer;
 

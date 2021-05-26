@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import Link from 'next/link';
 import {
   Header,
@@ -10,13 +9,11 @@ import {
   StyledLink,
   UnStyledLink,
   Svg,
-  MobileIcon,
   SvgMobile,
 } from './navbarStyles';
 import LogoImage from '../../../assets/logo/fit_logo_white_cropped.png';
-import LoginImage from '../../../assets/icons/user.svg';
 
-const Navbar = () => {
+const Navbar = ({ toggle }) => {
   return (
     <Header>
       <Nav>
@@ -26,6 +23,7 @@ const Navbar = () => {
           </UnStyledLink>
         </Link>
         <SvgMobile
+          onClick={toggle}
           id='Layer_1'
           enable-background='new 0 0 512 512'
           height='512'

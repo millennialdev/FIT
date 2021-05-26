@@ -1,11 +1,20 @@
 import Alert from './alert';
 import Navbar from './navbar';
+import Sidebar from './sidebar';
+import React, { useState } from 'react';
 
 const Header = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggle = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <>
       <Alert />
-      <Navbar />
+      <Sidebar isOpen={isOpen} toggle={toggle} />
+      <Navbar toggle={toggle} />
     </>
   );
 };

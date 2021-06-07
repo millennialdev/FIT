@@ -56,6 +56,10 @@ export const Img1 = styled.img`
     margin: 2.5em auto 3.5em auto;
     width: 100vw;
   }
+
+  @media screen and (max-width: 500px) {
+    height: 130vw;
+  }
 `;
 
 export const Img2 = styled.img`
@@ -87,7 +91,7 @@ export const Img2 = styled.img`
 
 export const Button = styled(RightArrow)`
   position: absolute;
-  background: #1b1b1b;
+  background: hsl(0deg, 0%, 17%);
   color: #f5f0f0;
   width: 110px;
   height: 110px;
@@ -116,9 +120,25 @@ export const Button = styled(RightArrow)`
 
   @media screen and (max-width: 620px) {
     inset: 815px 0 0 40%;
-    color: #1b1b1b;
+    /* color: #1b1b1b;
     background: #f5f0f0;
-    border: 5px solid hsl(99deg, 16%, 50%);
+    border: 5px solid hsl(99deg, 16%, 50%); */
+  }
+
+  @media screen and (max-width: 500px) {
+    inset: 150vw 0 0 40%;
+  }
+
+  @media screen and (max-width: 441px) {
+    inset: 156vw 0 0 38.5%;
+  }
+
+  @media screen and (max-width: 365px) {
+    inset: 160vw 0 0 35%;
+  }
+
+  @media screen and (max-width: 325px) {
+    inset: 165vw 0 0 32%;
   }
 `;
 

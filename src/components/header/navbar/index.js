@@ -59,7 +59,7 @@ const Navbar = ({ toggle }) => {
             </NavItem>
             <NavItem>
               <Link href='/login' passHref>
-                <StyledLink title='Login'>
+                <StyledLink>
                   Log In
                   <LoginLogo />
                 </StyledLink>

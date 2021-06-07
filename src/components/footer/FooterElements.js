@@ -26,7 +26,7 @@ export const FooterLinksContainer = styled.div`
 export const FooterLinksWrapper = styled.div`
   display: flex;
 
-  @media only screen and (max-width: 670px) {
+  @media only screen and (max-width: 685px) {
     flex-direction: column;
   }
 `;

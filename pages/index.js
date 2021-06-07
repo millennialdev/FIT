@@ -1,35 +1,13 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import styles from '../styles/Home.module.css';
+import Hero from '../src/sections/index/Hero';
 
 export default function Home() {
   return (
     <>
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <h1>home page</h1>
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
+      <Hero />
+      <h1>aslkfjasldkfj</h1>
     </>
   );
 }

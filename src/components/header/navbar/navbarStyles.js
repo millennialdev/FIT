@@ -51,7 +51,7 @@ export const LinksContainer = styled.div`
 export const List = styled.ul`
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: flex-end;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -59,7 +59,7 @@ export const List = styled.ul`
 
 export const NavItem = styled.li`
   @media only screen and (max-width: 1260px) {
-    margin: 0 0 0.75em 0;
+    margin: 0 0 1em 0.5em;
   }
 `;
 

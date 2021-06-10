@@ -34,20 +34,25 @@ export const Img1 = styled.img`
   }
 
   @media screen and (max-width: 1260px) {
-    width: 59vw;
+    width: 65vw;
+  }
+
+  @media screen and (max-width: 944px) {
+    width: 63vw;
   }
 
   @media screen and (max-width: 750px) {
     position: relative;
     inset: -70px 0 0 0;
-    width: 62vw;
+    width: 64vw;
+  }
+
+  @media screen and (max-width: 725px) {
+    width: 61vw;
   }
 
   @media screen and (max-width: 638px) {
     width: 59vw;
-  }
-
-  @media screen and (max-width: 638px) {
     inset: -75px 0 0 0;
   }
 
@@ -76,7 +81,19 @@ export const Img2 = styled.img`
   }
 
   @media screen and (max-width: 1260px) {
-    inset: 225px 0 0 75%;
+    inset: 225px 0 0 80%;
+  }
+
+  @media screen and (max-width: 944px) {
+    inset: 225px 0 0 78%;
+  }
+
+  @media screen and (max-width: 750px) {
+    inset: 225px 0 0 76.25%;
+  }
+
+  @media screen and (max-width: 725px) {
+    inset: 225px 0 0 73%;
   }
 
   @media screen and (max-width: 638px) {
@@ -107,11 +124,19 @@ export const Button = styled(RightArrow)`
   }
 
   @media screen and (max-width: 1260px) {
-    inset: 515px 0 0 68%;
+    inset: 515px 0 0 73%;
+  }
+
+  @media screen and (max-width: 944px) {
+    inset: 515px 0 0 71%;
   }
 
   @media screen and (max-width: 750px) {
-    inset: 515px 0 0 65%;
+    inset: 515px 0 0 66%;
+  }
+
+  @media screen and (max-width: 725px) {
+    inset: 515px 0 0 63%;
   }
 
   @media screen and (max-width: 638px) {

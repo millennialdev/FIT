@@ -99,6 +99,9 @@
 
 html,
 body {
+  font-size: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
   background: #1b1b1b;
   color: #f5f0f0;
   padding: 0;

@@ -104,7 +104,7 @@ export const Author = styled.span`
 
 export const PlayCircle = styled(PlayIcon)`
   position: relative;
-  top: 285px;
+  top: 29em;
   left: 90%;
   width: 35px;
   height: 35px;
@@ -122,5 +122,69 @@ export const PlayCircle = styled(PlayIcon)`
     background: #1b1b1b;
     color: #f5f0f0;
     border: 3.5px solid #8f6453;
+  }
+
+  @media only screen and (max-width: 3600px) {
+    top: 26em;
+  }
+
+  @media only screen and (max-width: 3230px) {
+    top: 23.5em;
+  }
+
+  @media only screen and (max-width: 2945px) {
+    top: 21em;
+  }
+
+  @media only screen and (max-width: 2645px) {
+    top: 18em;
+  }
+
+  @media only screen and (max-width: 2288px) {
+    top: 16em;
+  }
+
+  @media only screen and (max-width: 2100px) {
+    top: 19em;
+  }
+
+  @media only screen and (max-width: 1995px) {
+    top: 17em;
+  }
+
+  @media only screen and (max-width: 1790px) {
+    top: 15.5em;
+  }
+
+  @media only screen and (max-width: 1520px) {
+    top: 14em;
+  }
+
+  @media only screen and (max-width: 1396px) {
+    top: 13em;
+  }
+
+  @media only screen and (max-width: 1320px) {
+    top: 19em;
+  }
+
+  @media only screen and (max-width: 1224px) {
+    top: 17em;
+  }
+
+  @media only screen and (max-width: 1084px) {
+    top: 15.5em;
+  }
+
+  @media only screen and (max-width: 992px) {
+    top: 14em;
+  }
+
+  @media only screen and (max-width: 888px) {
+    top: 13em;
+  }
+
+  @media only screen and (max-width: 850px) {
+    display: none;
   }
 `;

@@ -26,7 +26,11 @@ export const FooterLinksContainer = styled.div`
 export const FooterLinksWrapper = styled.div`
   display: flex;
 
-  @media only screen and (max-width: 685px) {
+  @media only screen and (max-width: 600px) {
+    justify-content: space-evenly;
+  }
+
+  @media only screen and (max-width: 425px) {
     flex-direction: column;
   }
 `;
@@ -43,6 +47,14 @@ export const FooterLinkItems = styled.div`
 
   @media only screen and (max-width: 820px) {
     align-items: center;
+  }
+
+  @media only screen and (max-width: 690px) {
+    width: 100%;
+  }
+
+  @media only screen and (max-width: 600px) {
+    margin: 0.75em;
   }
 
   @media only screen and (max-width: 390px) {
@@ -68,6 +80,7 @@ export const FooterLink = styled.a`
   text-decoration: none;
   margin-bottom: 0.5rem;
   cursor: pointer;
+  white-space: nowrap;
 
   &:hover {
     color: #bc988a;
@@ -87,8 +100,13 @@ export const SocialMediaWrap = styled.div`
   max-width: 1100px;
   margin: 40px auto 0 auto;
 
+  @media only screen and (max-width: 1050px) {
+    justify-content: space-around;
+  }
+
   @media only screen and (max-width: 820px) {
     flex-direction: column;
+    margin-top: 20px;
   }
 `;
 

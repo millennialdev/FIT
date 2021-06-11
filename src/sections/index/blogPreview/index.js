@@ -5,23 +5,15 @@ import {
   Img,
   TextContainer,
   StyledLink,
+  H2,
 } from './BlogPreviewStyles';
-import { H2, Arrow } from '../space/GymSpaceStyles';
+import { Arrow } from '../space/GymSpaceStyles';
 
 const BlogPreview = () => {
   return (
     <BlogContainer>
       <TextContainer>
-        <H2
-          style={{
-            margin: '0 auto 0.5em auto',
-            letterSpacing: '2%',
-            fontSize: '42px',
-            textAlign: 'left',
-          }}
-        >
-          Trainer of the Week
-        </H2>
+        <H2>Trainer of the Week</H2>
         <Subtitle>Chad Chadsworth</Subtitle>
         <P>
           Franzen photo booth flexitarian palo santo mustache salvia YOLO

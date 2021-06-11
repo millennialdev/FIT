@@ -3,13 +3,16 @@ import Chad from '../../../assets/images/chad.jpg';
 import ChadMobile from '../../../assets/images/chad-mobile.jpg';
 
 export const BlogContainer = styled.div`
-  width: 62.5%;
+  width: 62%;
   padding-top: 4em;
-  max-width: 1870px;
   margin: 0 auto;
   display: grid;
   grid-gap: 3em;
   grid-template-columns: repeat(1, 1fr 1.6fr);
+
+  @media only screen and (max-width: 2100px) {
+    width: 75.5%;
+  }
 
   @media only screen and (max-width: 1600px) {
     width: 82%;
@@ -23,6 +26,10 @@ export const BlogContainer = styled.div`
 
 export const TextContainer = styled.div`
   width: 100%;
+
+  @media only screen and (max-width: 850px) {
+    text-align: center;
+  }
 `;
 
 export const Subtitle = styled.small`
@@ -31,6 +38,7 @@ export const Subtitle = styled.small`
   letter-spacing: -3.5%;
   max-width: 280px;
   font-weight: 400;
+  margin: 0 auto;
 `;
 
 export const P = styled.p`
@@ -39,6 +47,10 @@ export const P = styled.p`
   font-weight: 400;
   max-width: 385px;
   line-height: 122.9%;
+
+  @media only screen and (max-width: 850px) {
+    margin: 1.5em auto;
+  }
 `;
 
 export const Img = styled.div`
@@ -60,6 +72,7 @@ export const Img = styled.div`
   @media only screen and (max-width: 850px) {
     width: 83vw;
     height: 500px;
+    text-align: center;
   }
 
   @media only screen and (max-width: 684px) {
@@ -97,5 +110,23 @@ export const StyledLink = styled.a`
     &::after {
       width: 160px;
     }
+  }
+
+  @media screen and (max-width: 850px) {
+    margin: 0 auto;
+  }
+`;
+
+export const H2 = styled.h2`
+  color: #f5f0f0;
+  font-family: 'Aileron', sans-serif;
+  font-size: 42px;
+  font-weight: 600;
+  margin: 0 auto 0.5em auto;
+  letter-spacing: 2%;
+
+  @media screen and (max-width: 850px) {
+    text-align: center;
+    margin-bottom: 0.45em;
   }
 `;

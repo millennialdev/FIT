@@ -14,6 +14,8 @@ export const data = {
       preview:
         'The 20-Minute, Low-Impact Boxing Workout That Will Help you Blow Off Steam',
       author: 'Taylor Swift',
+      ideaLink: '/workout-ideas/twenty-minute-low-impact-boxing-workout',
+      videoLink: 'workout-ideas/video/1',
       lightButton: true,
     },
     {
@@ -22,6 +24,8 @@ export const data = {
       preview:
         'This 15-Minute Lower Body Barre Workout Will Leave Your Leg Muscles Screaming (for More)',
       author: 'Ronald Phillion',
+      ideaLink: '/workout-ideas/fifteen-minute-lower-body-barre-workout',
+      videoLink: 'workout-ideas/video/2',
       lightButton: false,
     },
     {
@@ -30,6 +34,8 @@ export const data = {
       preview:
         'The Speedy Barre Class Squeezes All of the Benefits of Cardio Into Just 20 Minutes',
       author: 'David DeMarco',
+      ideaLink: '/workout-ideas/speedy-barre-class',
+      videoLink: 'workout-ideas/video/3',
       lightButton: true,
     },
     {
@@ -38,6 +44,8 @@ export const data = {
       preview:
         'This 10-Minute Barre Class Doubles as an Abs-Strengthener and Tension Reliever',
       author: 'Joshua Milburn',
+      ideaLink: '/workout-ideas/ten-minute-barre-class',
+      videoLink: 'workout-ideas/video/4',
       lightButton: false,
     },
     {
@@ -46,6 +54,8 @@ export const data = {
       preview:
         'The 30-Minute Full-Body Barre Class That Will Make Every Last Muscle Quiver',
       author: 'James Fields',
+      ideaLink: '/workout-ideas/thirty-minute-full-body-barre-class',
+      videoLink: 'workout-ideas/video/5',
       lightButton: false,
     },
     {
@@ -54,6 +64,8 @@ export const data = {
       preview:
         'Most People Forget to Stretch This Area After a Run-Don’t Be One of Them',
       author: 'Alicia Keys',
+      ideaLink: '/workout-ideas/most-people-forget-to-stretch-this-area',
+      videoLink: 'workout-ideas/video/6',
       lightButton: false,
     },
   ],

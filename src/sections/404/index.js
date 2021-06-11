@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import {
   ErrorContainer,
   TextContainer,
@@ -15,7 +16,9 @@ const Error = () => {
           Looks like the page you tried navigating to doesn&#39;t exist&#33;
         </Subtitle>
       </TextContainer>
-      <Button>Go to Homepage</Button>
+      <Link href='/' passHref>
+        <Button>Go to Homepage</Button>
+      </Link>
     </ErrorContainer>
   );
 };

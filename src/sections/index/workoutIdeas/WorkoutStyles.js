@@ -45,11 +45,10 @@ export const Img = styled.img`
   width: 100%;
   cursor: pointer;
   transition: transform 500ms ease-in;
-  transition: border 400ms ease-in-out;
+  transition: border 500ms ease-in-out;
 
   &:hover {
-    transform: scale(1.035);
-    border: 3px solid hsl(17deg, 27%, 34%);
+    border: 3.5px solid hsl(17deg, 27%, 34%);
   }
 `;
 
@@ -117,11 +116,13 @@ export const PlayCircle = styled(PlayIcon)`
   transition: background 500ms ease;
   transition: color 300ms ease-in;
   transition: border 650ms ease-in-out;
+  transition: transform 750ms linear;
 
   &:hover {
     background: #1b1b1b;
     color: #f5f0f0;
     border: 3.5px solid #8f6453;
+    transform: scale(1.1);
   }
 
   @media only screen and (max-width: 3600px) {

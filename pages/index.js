@@ -1,6 +1,10 @@
-import { data as spaceData } from '../src/sections/index/space/SpaceData';
-import { data as typeData } from '../src/sections/index/workoutType/TypeData';
-import { Hero, GymSpace, BlogPreview } from '../src/sections/index';
+import { spaceData, typeData, workoutData } from '../src/sections/index/data';
+import {
+  Hero,
+  GymSpace,
+  BlogPreview,
+  WorkoutIdeas,
+} from '../src/sections/index';
 
 export default function Home() {
   return (
@@ -9,6 +13,7 @@ export default function Home() {
       <GymSpace data={spaceData} />
       <GymSpace data={typeData} />
       <BlogPreview />
+      <WorkoutIdeas data={workoutData} />
     </>
   );
 }

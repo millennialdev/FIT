@@ -1,0 +1,60 @@
+import Img1 from '../../../assets/images/workout-idea-1.jpg';
+import Img2 from '../../../assets/images/workout-idea-2.jpg';
+import Img3 from '../../../assets/images/workout-idea-3.jpg';
+import Img4 from '../../../assets/images/workout-idea-4.jpg';
+import Img5 from '../../../assets/images/workout-idea-5.jpg';
+import Img6 from '../../../assets/images/workout-idea-6.jpg';
+
+export const data = {
+  title: 'Workout Ideas',
+  cards: [
+    {
+      id: 1,
+      image: `${Img1}`,
+      preview:
+        'The 20-Minute, Low-Impact Boxing Workout That Will Help you Blow Off Steam',
+      author: 'Taylor Swift',
+      lightButton: true,
+    },
+    {
+      id: 2,
+      image: `${Img2}`,
+      preview:
+        'This 15-Minute Lower Body Barre Workout Will Leave Your Leg Muscles Screaming (for More)',
+      author: 'Ronald Phillion',
+      lightButton: false,
+    },
+    {
+      id: 3,
+      image: `${Img3}`,
+      preview:
+        'The Speedy Barre Class Squeezes All of the Benefits of Cardio Into Just 20 Minutes',
+      author: 'David DeMarco',
+      lightButton: true,
+    },
+    {
+      id: 4,
+      image: `${Img4}`,
+      preview:
+        'This 10-Minute Barre Class Doubles as an Abs-Strengthener and Tension Reliever',
+      author: 'Joshua Milburn',
+      lightButton: false,
+    },
+    {
+      id: 5,
+      image: `${Img5}`,
+      preview:
+        'The 30-Minute Full-Body Barre Class That Will Make Every Last Muscle Quiver',
+      author: 'James Fields',
+      lightButton: false,
+    },
+    {
+      id: 6,
+      image: `${Img6}`,
+      preview:
+        'Most People Forget to Stretch This Area After a Run-Don’t Be One of Them',
+      author: 'Alicia Keys',
+      lightButton: false,
+    },
+  ],
+};

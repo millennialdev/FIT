@@ -1,4 +1,5 @@
-import Hero from './hero/Hero';
-import GymSpace from './space/GymSpace';
+import Hero from './hero';
+import GymSpace from './space';
+import BlogPreview from './blogPreview';
 
-export { Hero, GymSpace };
+export { Hero, GymSpace, BlogPreview };

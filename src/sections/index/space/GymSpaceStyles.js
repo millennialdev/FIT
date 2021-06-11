@@ -11,7 +11,7 @@ export const Arrow = styled(rightArrow)`
 
 export const Container = styled.div`
   width: 62.5%;
-  padding-top: 5em;
+  padding-top: 1em;
   margin: 0 auto 5em auto;
 
   @media screen and (max-width: 2100px) {
@@ -28,7 +28,7 @@ export const Container = styled.div`
   }
 `;
 
-export const Title = styled.h3`
+export const H2 = styled.h2`
   color: #f5f0f0;
   font-family: 'Aileron', sans-serif;
   font-size: 42px;
@@ -80,6 +80,13 @@ export const Img = styled.img`
   height: 17rem;
   border-radius: 5px;
   object-fit: cover;
+  transition: transform 500ms ease-in;
+  transition: border 250ms ease-in-out;
+
+  &:hover {
+    transform: scale(1.035);
+    border: 3px solid hsl(17deg, 27%, 34%);
+  }
 `;
 
 export const Name = styled.h4`

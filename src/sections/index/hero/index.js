@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import LocationBillboard from '../../../components/locationBillboard';
 import HeroImg from '../../../assets/images/weightlifting-1.jpg';
 import SmallHeroImg from '../../../assets/images/rack-with-view.jpg';
@@ -13,9 +14,15 @@ import {
 const Hero = () => {
   return (
     <SectionContainer>
-      <Img1 src={HeroImg} valt='Weightlifting' />
-      <Img2 src={SmallHeroImg} valt='Another Weightlifting Image' />
-      <Button />
+      <Link href='/locations/downtown-gym' passHref>
+        <Img1 src={HeroImg} valt='Weightlifting' />
+      </Link>
+      <Link href='/locations/skyhigh-gym' passHref>
+        <Img2 src={SmallHeroImg} valt='Another Weightlifting Image' />
+      </Link>
+      <Link href='/locations' passHref>
+        <Button />
+      </Link>
       <LocationBillboard />
       {/* <DotContainer>
         <Dot />

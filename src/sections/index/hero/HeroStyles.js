@@ -28,6 +28,12 @@ export const Img1 = styled.img`
   height: 700px;
   border-radius: 5px;
   object-fit: cover;
+  transition: all 0.33s ease;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 12px 12px 2px 1px rgba(245, 245, 240, 0.075);
+  }
 
   @media screen and (max-width: 1880px) {
     inset: 225px 0 0 12%;
@@ -75,6 +81,12 @@ export const Img2 = styled.img`
   height: 700px;
   border-radius: 5px;
   object-fit: cover;
+  transition: all 0.33s ease;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 12px 12px 2px 1px rgba(245, 245, 240, 0.075);
+  }
 
   @media screen and (max-width: 1880px) {
     inset: 225px 0 0 84%;

@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import {
   BlogContainer,
   P,
@@ -28,13 +29,17 @@ const BlogPreview = () => {
           Church-key shabby chic drinking vinegar readymade try-hard hammock put
           a bird on it shaman fixie messenger bag selvage.
         </P>
-        <StyledLink>
-          <div>
-            View Full Blog <Arrow />
-          </div>
-        </StyledLink>
+        <Link href='/blog/chad-chadsworth' passHref>
+          <StyledLink>
+            <div>
+              View Full Blog <Arrow />
+            </div>
+          </StyledLink>
+        </Link>
       </TextContainer>
-      <Img />
+      <Link href='/blog/chad-chadsworth' passHref>
+        <Img />
+      </Link>
     </BlogContainer>
   );
 };

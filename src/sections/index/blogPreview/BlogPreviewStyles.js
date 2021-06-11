@@ -27,9 +27,9 @@ export const BlogContainer = styled.div`
 export const TextContainer = styled.div`
   width: 100%;
 
-  @media only screen and (max-width: 850px) {
+  /* @media only screen and (max-width: 850px) {
     text-align: center;
-  }
+  } */
 `;
 
 export const Subtitle = styled.small`
@@ -49,11 +49,12 @@ export const P = styled.p`
   line-height: 122.9%;
 
   @media only screen and (max-width: 850px) {
-    margin: 1.5em auto;
+    margin: 1.5em 0;
   }
 `;
 
 export const Img = styled.div`
+  cursor: pointer;
   background-image: url(${Chad});
   border-radius: 5px;
   background-repeat: no-repeat;
@@ -64,6 +65,13 @@ export const Img = styled.div`
   width: 100%;
   height: 100%;
   margin: auto;
+  transition: transform 500ms ease-in;
+  transition: border 250ms ease-in-out;
+
+  &:hover {
+    transform: scale(1.035);
+    border: 3px solid hsl(17deg, 27%, 34%);
+  }
 
   @media only screen and (max-width: 1280px) and (min-width: 850px) {
     background-image: url(${ChadMobile});
@@ -72,7 +80,6 @@ export const Img = styled.div`
   @media only screen and (max-width: 850px) {
     width: 83vw;
     height: 500px;
-    text-align: center;
   }
 
   @media only screen and (max-width: 684px) {
@@ -112,9 +119,9 @@ export const StyledLink = styled.a`
     }
   }
 
-  @media screen and (max-width: 850px) {
+  /* @media screen and (max-width: 850px) {
     margin: 0 auto;
-  }
+  } */
 `;
 
 export const H2 = styled.h2`
@@ -126,7 +133,7 @@ export const H2 = styled.h2`
   letter-spacing: 2%;
 
   @media screen and (max-width: 850px) {
-    text-align: center;
-    margin-bottom: 0.45em;
+    /* text-align: center; */
+    margin-bottom: 0.25em;
   }
 `;

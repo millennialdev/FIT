@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import LocationBillboard from '../../../components/locationBillboard';
+import LocationBillboard from './locationBillboard';
 import HeroImg from '../../../assets/images/weightlifting-1.jpg';
 import SmallHeroImg from '../../../assets/images/rack-with-view.jpg';
 import {

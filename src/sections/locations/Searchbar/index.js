@@ -1,30 +1,34 @@
 import {
   Form,
+  PlaceContainer,
   SearchIcon,
   SearchLabel,
   Search,
-  OptionsContainer,
+  SearchContainer,
   Label,
   Select,
   Option,
   ArrowDropdown,
+  ButtonContainer,
+  Button,
 } from './SearchbarStyles';
 
 const Searchbar = () => {
   return (
     <>
       <Form autoComplete='off'>
-        <SearchIcon />
-        <SearchLabel for='search'>Search</SearchLabel>
-        <Search
-          placeholder='Seattle, WA'
-          type='text'
-          id='search'
-          name='search'
-          pattern='\b[A-Z][a-zA-Z]+,[ ]?[A-Za-z]*\b'
-          required
-        ></Search>
-        <div>
+        <PlaceContainer>
+          <SearchIcon />
+          <SearchLabel for='search'>Search</SearchLabel>
+          <Search
+            placeholder='Seattle, Washington'
+            type='text'
+            id='search'
+            name='search'
+            pattern='\b[A-Z][a-zA-Z]+,[ ]?[A-Za-z]*\b'
+          ></Search>
+        </PlaceContainer>
+        <SearchContainer>
           <ArrowDropdown />
           <Select id='pod-dropdown'>
             <Option disabled='' value='' style={{ display: 'none' }}>
@@ -36,7 +40,11 @@ const Searchbar = () => {
             <Option>Pilaties</Option>
           </Select>
           <Label for='pod-dropdown'>Find Gym In</Label>
-        </div>
+        </SearchContainer>
+        <ButtonContainer>
+          <Button filled={false}>Capacity</Button>
+          <Button filled={true}>Trainer</Button>
+        </ButtonContainer>
       </Form>
     </>
   );

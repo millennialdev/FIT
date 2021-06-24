@@ -1,3 +1,4 @@
 import Searchbar from './Searchbar';
-
-export { Searchbar };
+import Alert from './Alert';
+import { CardTitle, Card, Map } from './Places';
+export { Searchbar, Alert, CardTitle, Card, Map };

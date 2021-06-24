@@ -5,12 +5,50 @@ import {
 } from 'react-icons/io';
 
 export const Form = styled.form`
-  width: 88%;
-  margin: 3.5em auto 0 auto;
+  width: 100%;
+  margin: 3.65em auto 0 auto;
   border-bottom: 2px solid #8f6453;
   display: grid;
   grid-gap: 100px;
-  grid-template-columns: repeat(1, 230px 132px 140px 1fr);
+  grid-template-columns: repeat(1, 225px 132px 140px 1fr);
+
+  @media only screen and (max-width: 1260px) {
+    margin-top: 2.35em;
+  }
+
+  @media only screen and (max-width: 800px) {
+    grid-gap: 12%;
+    grid-template-columns: repeat(1, 145px 132px 140px);
+  }
+
+  @media only screen and (max-width: 638px) {
+    margin-top: 4.65em;
+    grid-gap: 8%;
+    grid-template-columns: repeat(1, 145px 132px 125px);
+  }
+
+  @media only screen and (max-width: 638px) {
+    grid-gap: 6%;
+  }
+
+  @media only screen and (max-width: 524px) {
+    grid-template-columns: repeat(1, 145px 132px 55px);
+    grid-gap: auto;
+  }
+
+  @media only screen and (max-width: 428px) {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 5px;
+    margin-top: 3em;
+  }
+`;
+
+export const PlaceContainer = styled.div`
+  @media only screen and (max-width: 428px) {
+    width: 88%;
+    margin: 0 auto;
+    z-index: 2;
+  }
 `;
 
 export const SearchIcon = styled(SearchBefore)`
@@ -19,6 +57,15 @@ export const SearchIcon = styled(SearchBefore)`
   height: 22px;
   position: absolute;
   top: 204px;
+  z-index: 1;
+
+  @media only screen and (max-width: 524px) {
+    top: 210px;
+  }
+
+  @media only screen and (max-width: 428px) {
+    top: 172px;
+  }
 `;
 
 export const SearchLabel = styled.label`
@@ -35,9 +82,11 @@ export const Search = styled.input`
   font-weight: 500;
   padding-left: 2em;
   color: #fff;
+  position: relative;
   transition: background 770ms ease;
   transition: padding-left 450ms ease-out;
   z-index: 3;
+  text-overflow: ellipsis;
 
   &:focus {
     outline: none;
@@ -56,6 +105,36 @@ export const Search = styled.input`
   &::-ms-input-placeholder {
     color: #f5f0f0; /* Microsoft Edge */
   }
+
+  @media only screen and (max-width: 524px) {
+    padding-left: 1.45em;
+  }
+
+  @media only screen and (max-width: 428px) {
+    padding-left: 0em;
+    text-align: right;
+
+    &:focus {
+      background: hsl(0, 0%, 14%);
+    }
+  }
+
+  @media only screen and (max-width: 320px) {
+    font-size: clamp(12px, 5.5vw, 18px);
+    height: 125%;
+  }
+`;
+
+export const SearchContainer = styled.div`
+  display: flex;
+  flex-direction: row-reverse;
+  width: 100%;
+
+  @media only screen and (max-width: 428px) {
+    width: 88%;
+    margin: 0 auto;
+    display: block;
+  }
 `;
 
 export const Label = styled.label`
@@ -69,17 +148,25 @@ export const Select = styled.select`
   height: 100%;
   cursor: pointer;
   color: #f5f0f0;
-  padding: 0 2em 0 0.5em;
   margin-bottom: 23px;
   border: none;
   background: transparent;
   border-radius: 5px;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  box-shadow: none;
   outline: none;
   text-align: right;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+
+  @media only screen and (max-width: 428px) {
+    width: 100%;
+    height: auto;
+
+    &:focus {
+      padding: 0.25em;
+      background: hsl(0, 0%, 14%);
+    }
+  }
 `;
 
 export const Option = styled.option`
@@ -93,15 +180,63 @@ export const Option = styled.option`
 export const ArrowDropdown = styled(Dropdown)`
   color: #f5f0f0;
   cursor: pointer;
-  margin: 0;
+  float: right;
+  margin: auto 0;
   padding: 0;
   width: 15px;
   height: 15px;
-  position: absolute;
-  inset: 205.25px 0 0 35.25em;
   text-decoration: none;
 
   &:hover {
     cursor: pointer;
+  }
+
+  @media only screen and (max-width: 428px) {
+    position: relative;
+    top: 22.5px;
+    width: 25px;
+    height: 25px;
+  }
+`;
+
+export const ButtonContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+  @media only screen and (max-width: 524px) {
+    flex-direction: column;
+  }
+
+  @media only screen and (max-width: 428px) {
+    margin-bottom: 1em;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+`;
+
+export const Button = styled.div`
+  text-align: center;
+  font-size: 10px;
+  font-family: 'Aileron', sans-serif;
+  font-weight: 500;
+  height: 18px;
+  width: 55px;
+  line-height: ${({ filled }) => (filled ? '18px' : 'none')};
+  border: ${({ filled }) => (filled ? 'none' : '2px solid #8f6453')};
+  color: #f5f0f0;
+  background: ${({ filled }) => (filled ? '#8f6453' : 'transparent')};
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background 333ms ease;
+
+  &:hover {
+    background: hsl(17, 27%, 54%);
+  }
+
+  @media only screen and (max-width: 524px) {
+    margin: 0.4em 0;
   }
 `;

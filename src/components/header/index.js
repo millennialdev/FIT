@@ -1,7 +1,7 @@
 import Alert from './alert';
 import Navbar from './navbar';
 import Sidebar from './sidebar';
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);

@@ -29,17 +29,19 @@ const LocationBillboard = () => {
             <OptionsContainer>
               <ArrowDropdown />
               <Select id='locations-dropdown'>
+                <Option disabled='' value='' style={{ display: 'none' }}>
+                  Seattle
+                </Option>
                 <OptGroup label='United States'>
-                  <Option disabled='' value='' style={{ display: 'none' }}>
-                    Seattle
-                  </Option>
                   <Option>Atlanta</Option>
                   <Option>Austin</Option>
                   <Option>Boston</Option>
                   <Option>Seattle</Option>
                 </OptGroup>
-                <OptGroup label='Argentina'>
-                  <Option>Buenos Aires</Option>
+                <OptGroup label='Canada'>
+                  <Option>Vancouver</Option>
+                  <Option>Quebec</Option>
+                  <Option>Winnipeg</Option>
                 </OptGroup>
               </Select>
               <Label for='locations-dropdown' id='123'>

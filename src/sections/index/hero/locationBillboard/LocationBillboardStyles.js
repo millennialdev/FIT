@@ -127,7 +127,7 @@ export const Select = styled.select`
 
 export const Option = styled.option`
   color: #1b1b1b;
-  background: hsl(0deg, 20%, 96%);
+  background: hsl(0deg, 20%, 95%);
   font-size: 24px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
@@ -135,7 +135,7 @@ export const Option = styled.option`
 
 export const OptGroup = styled.optgroup`
   color: #684a3e;
-  background: hsl(0deg, 20%, 96%);
+  background: hsl(0deg, 20%, 95%);
   font-size: 26px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
@@ -156,6 +156,11 @@ export const Button = styled.button`
   font-weight: 600; /* Medium */
   display: block;
   margin: 0 auto 1em auto;
+  transition: opacity 0.33s ease;
+
+  &:hover {
+    opacity: 0.85;
+  }
 
   @media screen and (max-width: 550px) {
     font-size: clamp(1.35rem, 6vw, 1.625rem);

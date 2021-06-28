@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Error from '../src/sections/404';
+import { ContentContainer } from '../src/components';
 
 export default function errorPage() {
   return (
@@ -7,7 +8,9 @@ export default function errorPage() {
       <Head>
         <title>404 | Functional Intense Training</title>
       </Head>
-      <Error>hello world this is my cool error page! 🥵😎😘</Error>
+      <ContentContainer>
+        <Error>hello world this is my cool error page! 🥵😎😘</Error>
+      </ContentContainer>
     </>
   );
 }

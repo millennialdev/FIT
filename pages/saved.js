@@ -1,6 +1,6 @@
 import Head from 'next/head';
-import Image from 'next/image';
-import styles from '../styles/Home.module.css';
+
+import { ContentContainer } from '../src/components';
 
 export default function Saved() {
   return (
@@ -8,7 +8,9 @@ export default function Saved() {
       <Head>
         <title>Saved | Functional Intense Training</title>
       </Head>
-      <h1>saved</h1>
+      <ContentContainer>
+        <h1>saved</h1>
+      </ContentContainer>
     </>
   );
 }

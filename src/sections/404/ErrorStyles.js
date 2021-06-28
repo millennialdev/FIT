@@ -21,6 +21,10 @@ export const H1 = styled.h1`
   letter-spacing: 1%;
   color: #f5f0f0;
   margin-bottom: 0.125em;
+
+  @media only screen and (max-width: 260px) {
+    word-break: break-word;
+  }
 `;
 
 export const Subtitle = styled.p`

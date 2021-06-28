@@ -4,15 +4,22 @@ import Img3 from '../../assets/images/card-3.jpg';
 import Img4 from '../../assets/images/card-4.jpg';
 
 export const data = {
-  cityDefaultText: 'Seattle, Washington',
-  roomDefaultText: 'Workout Pod Type',
-  roomTypes: ['Bodybuilding', 'Cycling', 'HIIT', 'Pilaties'],
-  filterButtons: [
-    { text: 'Capacity', filled: false },
-    { text: 'Trainer', filled: true },
-  ],
-  alertText: `Tell us your <Span>capacity</Span> and <Span>start date</Span> to view
-      available inventory`,
+  searchBar: {
+    inputLabel: 'Search',
+    dropdownLabel: 'Find Gym In',
+    cityDefaultText: 'Seattle, Washington',
+    roomDefaultText: 'Workout Pod Type',
+    roomTypes: [
+      { id: 1, type: 'Bodybuilding' },
+      { id: 2, type: 'Cycling' },
+      { id: 3, type: 'HIIT' },
+      { id: 4, type: 'Pilaties' },
+    ],
+    filterButtons: [
+      { id: 1, text: 'Capacity', filled: false },
+      { id: 2, text: 'Trainer', filled: true },
+    ],
+  },
   cardTitleText: 'Viewing 11 FIT Affiliated Gyms',
   cards: [
     {

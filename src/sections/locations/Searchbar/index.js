@@ -13,15 +13,15 @@ import {
   Button,
 } from './SearchbarStyles';
 
-const Searchbar = () => {
+const Searchbar = ({ data }) => {
   return (
     <>
       <Form autoComplete='off'>
         <PlaceContainer>
           <SearchIcon />
-          <SearchLabel htmlFor='search'>Search</SearchLabel>
+          <SearchLabel htmlFor='search'>{data.inputLabel}</SearchLabel>
           <Search
-            placeholder='Seattle, Washington'
+            placeholder={data.cityDefaultText}
             type='text'
             id='search'
             name='search'
@@ -32,18 +32,22 @@ const Searchbar = () => {
           <ArrowDropdown />
           <Select id='pod-dropdown'>
             <Option disabled='' value='' style={{ display: 'none' }}>
-              Workout Pod Type
+              {data.roomDefaultText}
             </Option>
-            <Option>Bodybuilding</Option>
-            <Option>Cycling</Option>
-            <Option>HIIT</Option>
-            <Option>Pilaties</Option>
+            {data.roomTypes.map((type) => {
+              return <Option key={type.id}>{type.type}</Option>;
+            })}
           </Select>
-          <Label htmlFor='pod-dropdown'>Find Gym In</Label>
+          <Label htmlFor='pod-dropdown'>{data.dropdownLabel}</Label>
         </SearchContainer>
         <ButtonContainer>
-          <Button filled={false}>Capacity</Button>
-          <Button filled={true}>Trainer</Button>
+          {data.filterButtons.map((button) => {
+            return (
+              <Button key={button.id} filled={button.filled}>
+                {button.text}
+              </Button>
+            );
+          })}
         </ButtonContainer>
       </Form>
     </>

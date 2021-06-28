@@ -12,17 +12,19 @@ import { ContentContainer } from '../src/components';
 
 export default function Locations() {
   return (
-    <ContentContainer>
+    <>
       <Head>
         <title>Locations | Functional Intense Training</title>
       </Head>
-      <Searchbar />
-      <Alert />
-      <LocationAndMapContainer>
-        <CardTitle />
-        <Card data={data.cards} />
-        <Map />
-      </LocationAndMapContainer>
-    </ContentContainer>
+      <ContentContainer>
+        <Searchbar data={data.searchBar} />
+        <Alert />
+        <LocationAndMapContainer>
+          <CardTitle title={data.cardTitleText} />
+          <Card data={data.cards} />
+          <Map />
+        </LocationAndMapContainer>
+      </ContentContainer>
+    </>
   );
 }

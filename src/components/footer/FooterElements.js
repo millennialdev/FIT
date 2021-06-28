@@ -57,7 +57,7 @@ export const FooterLinkItems = styled.div`
     margin: 0.75em;
   }
 
-  @media only screen and (max-width: 390px) {
+  @media only screen and (max-width: 425px) {
     margin: 0;
     padding: 10px;
     width: 100%;
@@ -134,6 +134,7 @@ export const WebsiteRights = styled.small`
   font-size: 11px;
   color: #f5f0f0;
   margin-bottom: 16px;
+  text-align: center;
 `;
 
 export const SocialIcons = styled.div`
@@ -141,6 +142,21 @@ export const SocialIcons = styled.div`
   justify-content: space-between;
   align-items: center;
   width: 240px;
+
+  @media only screen and (max-width: 313px) {
+    width: 200px;
+  }
+
+  @media only screen and (max-width: 220px) {
+    width: 175px;
+  }
+
+  @media only screen and (max-width: 200px) {
+    width: 100%;
+    height: 240px;
+    margin-top: 16px;
+    flex-direction: column;
+  }
 `;
 
 export const SocialIconLink = styled.a`

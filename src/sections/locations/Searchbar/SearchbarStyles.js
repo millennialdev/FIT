@@ -66,6 +66,10 @@ export const SearchIcon = styled(SearchBefore)`
   @media only screen and (max-width: 428px) {
     top: 172px;
   }
+
+  @media only screen and (max-width: 195px) {
+    display: none;
+  }
 `;
 
 export const SearchLabel = styled.label`
@@ -85,6 +89,7 @@ export const Search = styled.input`
   position: relative;
   transition: background 770ms ease;
   transition: padding-left 450ms ease-out;
+  transition: all 560ms ease-in-out;
   z-index: 3;
   text-overflow: ellipsis;
 
@@ -115,13 +120,18 @@ export const Search = styled.input`
     text-align: right;
 
     &:focus {
-      background: hsl(0, 0%, 14%);
+      background: hsl(0, 0%, 24%);
     }
   }
 
   @media only screen and (max-width: 320px) {
     font-size: clamp(12px, 5.5vw, 18px);
     height: 125%;
+  }
+
+  @media only screen and (max-width: 195px) {
+    padding-left: 0px;
+    text-align: left;
   }
 `;
 
@@ -157,21 +167,21 @@ export const Select = styled.select`
   -webkit-appearance: none;
   -moz-appearance: none;
   -o-appearance: none;
+  transition: background 440ms ease;
 
   @media only screen and (max-width: 428px) {
     width: 100%;
     height: auto;
 
     &:focus {
-      padding: 0.25em;
-      background: hsl(0, 0%, 14%);
+      background: hsl(0, 0%, 24%);
     }
   }
 `;
 
 export const Option = styled.option`
   color: #f5f0f0;
-  background: hsl(0, 0%, 14%);
+  background: hsl(0, 0%, 24%);
   font-size: 12px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
@@ -233,7 +243,11 @@ export const Button = styled.div`
   transition: background 333ms ease;
 
   &:hover {
-    background: hsl(17, 27%, 54%);
+    background: ${({ filled }) =>
+      filled ? 'transparent' : 'hsl(17, 27%, 54%)'};
+    border: ${({ filled }) =>
+      filled ? '2px solid hsl(17, 27%, 54%)' : 'none'};
+    line-height: ${({ filled }) => (filled ? '14px' : '16px')};
   }
 
   @media only screen and (max-width: 524px) {

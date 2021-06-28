@@ -17,4 +17,9 @@ export const Container = styled.div`
     font-size: clamp(0.7rem, 3.5vw, 0.9rem);
     padding: 25px 1px 25px 1px;
   }
+
+  @media only screen and (max-width: 220px) {
+    font-size: 0.65rem;
+    padding: 25px 10px;
+  }
 `;

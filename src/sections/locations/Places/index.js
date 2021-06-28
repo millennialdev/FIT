@@ -1,15 +1,9 @@
-import { P } from './PlacesStyles';
+import { P, LocationAndMapContainer, CardsContainer } from './PlacesStyles';
+import Card from './Card';
+import Map from './Map';
 
 const CardTitle = () => {
   return <P>Viewing 11 FIT Affiliated Gyms</P>;
 };
 
-const Card = () => {
-  return <div>card</div>;
-};
-
-const Map = () => {
-  return <div>map!!!</div>;
-};
-
-export { CardTitle, Card, Map };
+export { CardTitle, Card, Map, LocationAndMapContainer, CardsContainer };

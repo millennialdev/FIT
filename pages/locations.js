@@ -3,8 +3,10 @@ import {
   Searchbar,
   Alert,
   CardTitle,
+  CardsContainer,
   Card,
   Map,
+  LocationAndMapContainer,
 } from '../src/sections/locations';
 
 export default function Locations() {
@@ -15,12 +17,23 @@ export default function Locations() {
       </Head>
       <Searchbar />
       <Alert />
-      <CardTitle />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Map />
+      <LocationAndMapContainer>
+        <CardTitle />
+        <CardsContainer>
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          {/* {data.cards.map((card) {
+            retrun (
+              <Card key={card.id}>
+
+              </Card>
+            )
+          })} */}
+        </CardsContainer>
+        <Map />
+      </LocationAndMapContainer>
     </div>
   );
 }

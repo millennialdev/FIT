@@ -1,6 +1,21 @@
 import styled from 'styled-components';
 import { HiHeart } from 'react-icons/hi';
 
+export const CardsContainer = styled.div`
+  @media only screen and (max-width: 810px) {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr 1fr);
+    grid-gap: 20px;
+    margin-top: 20px;
+  }
+
+  @media only screen and (max-width: 520px) {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    margin-top: 30px;
+  }
+`;
+
 export const CardContainer = styled.div`
   width: 710px;
   height: 200px;
@@ -15,21 +30,25 @@ export const CardContainer = styled.div`
   @media only screen and (max-width: 810px) {
     grid-template-columns: repeat(1, 1fr);
     width: 100%;
-    height: 425px;
+    height: 500px;
     margin: 0;
   }
 
   @media only screen and (max-width: 520px) {
-    height: 500px;
+    height: 540px;
   }
 
   @media only screen and (max-width: 428px) {
-    height: 460px;
+    height: 480px;
   }
 
-  @media only screen and (max-width: 344px) {
-    height: 420px;
+  @media only screen and (max-width: 400px) {
+    height: 500px;
   }
+
+  /* @media only screen and (max-width: 260px) {
+    max-width: 80%;
+  } */
 `;
 
 export const Image = styled.img`
@@ -39,8 +58,7 @@ export const Image = styled.img`
   overflow: hidden;
   border: 0;
   border-radius: 5px 0 0 5px;
-  object-fit: fill;
-  background: blue;
+  object-fit: cover;
 `;
 
 export const TextContainer = styled.div`
@@ -70,7 +88,22 @@ export const H2 = styled.h2`
   font-family: 'Aileron', sans;
   font-size: 30px;
   font-weight: 600;
+  max-width: 76%;
   margin: 0;
+
+  @media only screen and (max-width: 810px) {
+    line-height: 32px;
+  }
+
+  @media only screen and (max-width: 568px) and (min-width: 520px) {
+    font-size: 26px;
+  }
+
+  @media only screen and (max-width: 260px) {
+    -ms-word-break: break-all;
+    word-break: break-all;
+    word-break: break-word;
+  }
 `;
 
 export const Location = styled.h4`

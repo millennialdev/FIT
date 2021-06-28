@@ -19,7 +19,7 @@ const Searchbar = () => {
       <Form autoComplete='off'>
         <PlaceContainer>
           <SearchIcon />
-          <SearchLabel for='search'>Search</SearchLabel>
+          <SearchLabel htmlFor='search'>Search</SearchLabel>
           <Search
             placeholder='Seattle, Washington'
             type='text'
@@ -39,7 +39,7 @@ const Searchbar = () => {
             <Option>HIIT</Option>
             <Option>Pilaties</Option>
           </Select>
-          <Label for='pod-dropdown'>Find Gym In</Label>
+          <Label htmlFor='pod-dropdown'>Find Gym In</Label>
         </SearchContainer>
         <ButtonContainer>
           <Button filled={false}>Capacity</Button>

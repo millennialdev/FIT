@@ -1,9 +1,9 @@
 import Head from 'next/head';
+import { data } from '../src/sections/locations/Data';
 import {
   Searchbar,
   Alert,
   CardTitle,
-  CardsContainer,
   Card,
   Map,
   LocationAndMapContainer,
@@ -19,19 +19,7 @@ export default function Locations() {
       <Alert />
       <LocationAndMapContainer>
         <CardTitle />
-        <CardsContainer>
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          {/* {data.cards.map((card) {
-            retrun (
-              <Card key={card.id}>
-
-              </Card>
-            )
-          })} */}
-        </CardsContainer>
+        <Card data={data.cards} />
         <Map />
       </LocationAndMapContainer>
     </div>

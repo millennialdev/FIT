@@ -1,4 +1,5 @@
 import {
+  CardsContainer,
   CardContainer,
   Image,
   TextContainer,
@@ -8,21 +9,26 @@ import {
   Location,
   P,
 } from './CardStyles';
-import Img1 from '../../../../assets/images/card-1.jpg';
 
-const Card = () => {
+const Card = ({ data }) => {
   return (
-    <CardContainer>
-      <Image src={Img1} />
-      <TextContainer>
-        <TitleContainer>
-          <H2>Sunset North</H2>
-          <Heart isHeart={false} onDemand={true} />
-        </TitleContainer>
-        <Location>Seattle</Location>
-        <P>Mother’s room · Service permitted · Parking · Bike storage · 9+</P>
-      </TextContainer>
-    </CardContainer>
+    <CardsContainer>
+      {data.map((card) => {
+        return (
+          <CardContainer key={card.id}>
+            <Image src={card.image} />
+            <TextContainer>
+              <TitleContainer>
+                <H2>{card.title}</H2>
+                <Heart isHeart={card.isHeart} />
+              </TitleContainer>
+              <Location>{card.city}</Location>
+              <P>{card.copy}</P>
+            </TextContainer>
+          </CardContainer>
+        );
+      })}
+    </CardsContainer>
   );
 };
 

@@ -44,7 +44,7 @@ const LocationBillboard = () => {
                   <Option>Winnipeg</Option>
                 </OptGroup>
               </Select>
-              <Label for='locations-dropdown' id='123'>
+              <Label htmlFor='locations-dropdown' id='123'>
                 Find Gym In
               </Label>
               <DropdownMap />

@@ -19,18 +19,3 @@ export const LocationAndMapContainer = styled.div`
     margin-bottom: 0px;
   }
 `;
-
-export const CardsContainer = styled.div`
-  @media only screen and (max-width: 810px) {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr 1fr);
-    grid-gap: 20px;
-    margin-top: 20px;
-  }
-
-  @media only screen and (max-width: 520px) {
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 30px;
-    margin-top: 30px;
-  }
-`;

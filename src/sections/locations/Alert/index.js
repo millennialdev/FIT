@@ -26,6 +26,7 @@ const P = styled.p`
 const Span = styled.span`
   font-weight: 500;
   color: #7c5748;
+  cursor: pointer;
 `;
 
 const Alert = () => {

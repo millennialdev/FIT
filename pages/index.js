@@ -6,6 +6,7 @@ import {
   BlogPreview,
   WorkoutIdeas,
 } from '../src/sections/index';
+import { ContentContainer } from '../src/components';
 
 export default function Home() {
   return (
@@ -13,11 +14,13 @@ export default function Home() {
       <Head>
         <title>Home | Functional Intense Training</title>
       </Head>
-      <Hero />
-      <GymSpace data={spaceData} />
-      <GymSpace data={typeData} />
-      <BlogPreview />
-      <WorkoutIdeas data={workoutData} />
+      <ContentContainer style={{ maxWidth: '100%' }}>
+        <Hero />
+        <GymSpace data={spaceData} />
+        <GymSpace data={typeData} />
+        <BlogPreview />
+        <WorkoutIdeas data={workoutData} />
+      </ContentContainer>
     </>
   );
 }

@@ -8,10 +8,11 @@ import {
   Map,
   LocationAndMapContainer,
 } from '../src/sections/locations';
+import { ContentContainer } from '../src/components';
 
 export default function Locations() {
   return (
-    <div style={{ maxWidth: '88%', margin: '0 auto' }}>
+    <ContentContainer>
       <Head>
         <title>Locations | Functional Intense Training</title>
       </Head>
@@ -22,6 +23,6 @@ export default function Locations() {
         <Card data={data.cards} />
         <Map />
       </LocationAndMapContainer>
-    </div>
+    </ContentContainer>
   );
 }

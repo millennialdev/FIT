@@ -13,29 +13,19 @@ const Form = () => {
   return (
     <FormContainer>
       <H1>Contact Us</H1>
-      <TheForm action=''>
+      <TheForm action='https://formspree.io/f/xbjqkoez' method='POST'>
         <Label htmlFor='name'>Name</Label>
         <Input type='text' id='name' name='name' />
         <Label htmlFor='email'>Email</Label>
-        <Input type='email' id='email' name='email' />
+        <Input type='email' id='email' name='_replyto' />
         <MsgContainer>
           <Label htmlFor='message'>Message</Label>
-          <MsgInput id='message' />
+          <MsgInput id='message' name='message' />
         </MsgContainer>
-        <Button>Send</Button>
+        <Button type='submit'>Send</Button>
       </TheForm>
     </FormContainer>
   );
 };
 
 export default Form;
-
-{
-  /* <form action="/action_page.php">
-  <label for="fname">First name:</label><br>
-  <input type="text" id="fname" name="fname" value="John"><br>
-  <label for="lname">Last name:</label><br>
-  <input type="text" id="lname" name="lname" value="Doe"><br><br>
-  <input type="submit" value="Submit">
-</form>  */
-}

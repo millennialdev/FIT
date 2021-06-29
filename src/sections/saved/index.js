@@ -24,3 +24,16 @@ export const LocationAndMapContainer = styled.div`
     margin-bottom: 0em;
   }
 `;
+
+export const H3 = styled.h3`
+  font-family: 'Aileron', sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  margin: 0.5em 0;
+`;
+
+export const P = styled.p`
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+`;

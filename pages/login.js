@@ -1,5 +1,7 @@
 import Head from 'next/head';
-import { useRouter } from 'next/router';
+import Link from 'next/link';
+import { ContentContainer } from '../src/components';
+import { Logo, Form, AccountsInfo } from '../src/sections/login';
 
 export default function Login() {
   return (
@@ -7,7 +9,11 @@ export default function Login() {
       <Head>
         <title>Login | Functional Intense Training</title>
       </Head>
-      <h1>login</h1>
+      <ContentContainer>
+        <Logo />
+        <Form />
+        <AccountsInfo />
+      </ContentContainer>
     </>
   );
 }

@@ -112,8 +112,6 @@ export const StyledLink = styled.a`
 `;
 
 export const UnStyledLink = styled.a`
-  /* margin: auto 1em auto 1em; */
-  border-top-right-radius: 10px;
   position: relative;
   cursor: pointer;
 `;

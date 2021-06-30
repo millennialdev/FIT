@@ -13,12 +13,12 @@ export const H1 = styled.h1`
   color: #f5f0f0;
   text-align: center;
   padding-top: 0.75em;
+  overflow-wrap: break-word;
 `;
 
 export const TheForm = styled.form`
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  /* grid-gap: 30px; */
   max-width: 89%;
   margin: 0 auto;
 `;

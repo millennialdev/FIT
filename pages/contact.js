@@ -9,7 +9,7 @@ import {
 } from '../src/sections/contact';
 
 const FormContentContainer = styled(ContentContainer)`
-  max-width: 73%;
+  max-width: 1200px;
   margin: 5em auto;
 
   @media only screen and (max-width: 1260px) {

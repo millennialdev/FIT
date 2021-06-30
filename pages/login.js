@@ -1,5 +1,4 @@
 import Head from 'next/head';
-import Link from 'next/link';
 import { ContentContainer } from '../src/components';
 import { Logo, Form, AccountsInfo } from '../src/sections/login';
 

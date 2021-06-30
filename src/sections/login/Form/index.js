@@ -7,15 +7,16 @@ const Form = () => {
       <H1>Functional Intense Training</H1>
       <TheForm action='https://formspree.io/f/xayabbpq' method='POST'>
         <Label htmlFor='name'>Name</Label>
-        <Input type='text' id='name' name='name' />
+        <Input type='text' id='name' name='Name' required />
         <Label htmlFor='email'>Email</Label>
-        <Input type='email' id='email' name='_replyto' />
+        <Input type='email' id='email' name='_replyto' required />
         <Label htmlFor='password'>Password</Label>
         <Input
           type='password'
           id='password'
-          name='_password'
+          name='Password'
           pattern='^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$'
+          required
         />
         <Button type='submit'>Log In</Button>
       </TheForm>

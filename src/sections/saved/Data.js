@@ -12,7 +12,7 @@ export const data = {
       city: 'Bellvue',
       copy: 'Cycling room · Paid Parking · Juice Bar · Swimming Pool · 10+',
       isHeart: true,
-      onDemand: false,
+      onDemand: true,
     },
     {
       id: 2,

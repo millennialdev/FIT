@@ -1,6 +1,7 @@
 import {
   CardsContainer,
   CardContainer,
+  OnDemand,
   Image,
   TextContainer,
   TitleContainer,
@@ -17,6 +18,7 @@ const Card = ({ data }) => {
         return (
           <CardContainer key={card.id}>
             <Image src={card.image} />
+            <OnDemand onDemand={card.onDemand}>ON DEMAND</OnDemand>
             <TextContainer>
               <TitleContainer>
                 <H2>{card.title}</H2>

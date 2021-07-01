@@ -45,10 +45,21 @@ export const CardContainer = styled.div`
   @media only screen and (max-width: 400px) {
     height: 500px;
   }
+`;
 
-  /* @media only screen and (max-width: 260px) {
-    max-width: 80%;
-  } */
+export const OnDemand = styled.p`
+  font-family: 'Aileron', sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  position: absolute;
+  background: #f5f0f0;
+  color: #1b1b1b;
+  border-radius: 5px;
+  letter-spacing: 0.72px; /* 6% */
+  margin-left: 1em;
+  margin-top: 1.25em;
+  padding: 0.3em;
+  display: ${({ onDemand }) => (onDemand ? 'block' : 'none')};
 `;
 
 export const Image = styled.img`
@@ -59,6 +70,7 @@ export const Image = styled.img`
   border: 0;
   border-radius: 5px 0 0 5px;
   object-fit: cover;
+  filter: brightness(90%);
 `;
 
 export const TextContainer = styled.div`

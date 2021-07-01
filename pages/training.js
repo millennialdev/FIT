@@ -1,6 +1,16 @@
 import Head from 'next/head';
-import Image from 'next/image';
-import styles from '../styles/Home.module.css';
+import {
+  Hero,
+  PersonalTraining,
+  Results,
+  TrainerHero,
+  Tabs,
+  Tiers,
+  TierXHero,
+  SleepCoaching,
+  TrainerForm,
+} from '../src/sections/training';
+import { ContentContainer } from '../src/components/index';
 
 export default function Training() {
   return (
@@ -8,7 +18,21 @@ export default function Training() {
       <Head>
         <title>Training | Functional Intense Training</title>
       </Head>
-      <h1>training</h1>
+      <Hero />
+      <ContentContainer>
+        <PersonalTraining />
+        <Results />
+      </ContentContainer>
+      <TrainerHero />
+      <Tabs />
+      <ContentContainer>
+        <Tiers />
+      </ContentContainer>
+      <TierXHero />
+      <ContentContainer>
+        <SleepCoaching />
+        <TrainerForm />
+      </ContentContainer>
     </>
   );
 }

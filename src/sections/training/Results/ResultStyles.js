@@ -20,7 +20,7 @@ export const LeftContainer = styled.div`
   margin-right: 3.5em;
 
   @media only screen and (max-width: 832px) {
-    margin: 5em auto;
+    margin: 5em auto 1em auto;
   }
 
   @media only screen and (max-width: 432px) {

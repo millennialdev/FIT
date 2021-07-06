@@ -4,7 +4,7 @@ export const Accordion = () => {
   return (
     <Tabs className='tabs'>
       <Tab className='tab'>
-        <Input id='rd1' type='radio' name='rd' />
+        <Input id='rd1' type='radio' name='rd' className='accordion-i' />
         <Label htmlFor='rd1' className='tab-label'>
           We find your partner
         </Label>
@@ -17,7 +17,7 @@ export const Accordion = () => {
       </Tab>
       <HR />
       <Tab className='tab'>
-        <Input id='rd2' type='radio' name='rd' />
+        <Input id='rd2' type='radio' name='rd' className='accordion-i' />
         <Label htmlFor='rd2' className='tab-label'>
           We make your plan.
         </Label>
@@ -30,7 +30,7 @@ export const Accordion = () => {
       </Tab>
       <HR />
       <Tab className='tab'>
-        <Input id='rd3' type='radio' name='rd' />
+        <Input id='rd3' type='radio' name='rd' className='accordion-i' />
         <Label htmlFor='rd3' className='tab-label'>
           We start the work.
         </Label>
@@ -44,7 +44,7 @@ export const Accordion = () => {
       </Tab>
       <HR />
       <Tab className='tab'>
-        <Input id='rd4' type='radio' name='rd' />
+        <Input id='rd4' type='radio' name='rd' className='accordion-i' />
         <Label htmlFor='rd4' className='tab-label'>
           Take our training anywhere
         </Label>

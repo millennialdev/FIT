@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import HeroImg from '../../../assets/images/trainer-hero.jpg';
 
 export const HeroContainer = styled.div`
-  margin: 7em auto;
+  margin: 7em auto 0 auto;
   background: url(${HeroImg});
   background-repeat: no-repeat;
   background-position: center center;

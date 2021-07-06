@@ -29,7 +29,7 @@ export default function Training() {
         <Tiers />
       </ContentContainer>
       <TierXHero />
-      <ContentContainer style={{ margin: '10em auto' }}>
+      <ContentContainer style={{ margin: '10em auto 0em auto' }}>
         <SleepCoaching />
         <TrainerForm />
       </ContentContainer>

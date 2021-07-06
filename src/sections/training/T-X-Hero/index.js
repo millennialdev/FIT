@@ -18,7 +18,7 @@ const TXHero = () => {
           <Link href='/training/tier-x' passHref>
             <StyledLink>
               <div>
-                View Full Blog <Arrow />
+                Explore Tier X <Arrow />
               </div>
             </StyledLink>
           </Link>

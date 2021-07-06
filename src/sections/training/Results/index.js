@@ -10,7 +10,7 @@ const Results = () => {
         <H2 style={{ maxWidth: '494px' }}>make real results happen</H2>
         <Accordion />
       </LeftContainer>
-      <Img src={resultsImg} />
+      <Img src={resultsImg} alt='results' />
     </Container>
   );
 };

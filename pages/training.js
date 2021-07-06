@@ -25,7 +25,7 @@ export default function Training() {
       </ContentContainer>
       <TrainerHero />
       <Tabs />
-      <ContentContainer>
+      <ContentContainer style={{ margin: '10em auto' }}>
         <Tiers />
       </ContentContainer>
       <TierXHero />

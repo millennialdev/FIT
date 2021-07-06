@@ -41,7 +41,7 @@ export const H2 = styled.h2`
   font-size: 58px;
   margin: 0;
   color: #f5f0f0;
-  letter-spacing: calc(-6% * 96px);
+  letter-spacing: -1.76px;
   text-transform: uppercase;
   line-height: 60px;
   transform: translateY(-7px);

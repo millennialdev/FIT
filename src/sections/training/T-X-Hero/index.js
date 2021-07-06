@@ -15,7 +15,7 @@ const TXHero = () => {
             more than redefine your workout—it transforms how you move, feel,
             and recharge.
           </P>
-          <Link href='/' passHref>
+          <Link href='/training/tier-x' passHref>
             <StyledLink>
               <div>
                 View Full Blog <Arrow />

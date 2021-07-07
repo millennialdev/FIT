@@ -7,7 +7,7 @@ export const HeroContainer = styled.div`
   width: 100%;
   display: grid;
   grid-template-columns: repeat(1, 1fr 250px);
-  margin-top: 3em;
+  margin: 3em auto 7.5em auto;
   position: relative;
 
   @media only screen and (max-width: 1528px) {

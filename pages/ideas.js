@@ -1,6 +1,11 @@
 import Head from 'next/head';
-import Image from 'next/image';
-import styles from '../styles/Home.module.css';
+import { ContentContainer } from '../src/components';
+import {
+  BlogPreview,
+  LifeStylePreview,
+  HealthPreview,
+  EmailSignup,
+} from '../src/sections/ideas';
 
 export default function Ideas() {
   return (
@@ -8,7 +13,12 @@ export default function Ideas() {
       <Head>
         <title>Ideas | Functional Intense Training</title>
       </Head>
-      <h1>ideas</h1>
+      <ContentContainer style={{ margin: '7.5em auto' }}>
+        <BlogPreview />
+        <LifeStylePreview />
+        <HealthPreview />
+      </ContentContainer>
+      <EmailSignup />
     </>
   );
 }

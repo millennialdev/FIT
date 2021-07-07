@@ -88,6 +88,7 @@ export const Button = styled.button`
   width: 264px;
   height: 50px;
   border: none;
+  cursor: pointer;
 
   @media only screen and (max-width: 445px) {
     width: 100%;

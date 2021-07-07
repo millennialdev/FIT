@@ -52,7 +52,7 @@ const AccountsInfo = () => {
       </SocialLoginContainer>
       <PSignup>
         Already have an account?{' '}
-        <Link href='/signup' passHref>
+        <Link href='/login' passHref>
           <Span>Sign in</Span>
         </Link>
       </PSignup>

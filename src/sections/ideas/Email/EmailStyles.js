@@ -95,7 +95,7 @@ export const Button = styled.button`
   font-family: 'Aileron', sans-serif;
   font-weight: 500;
   font-size: 24px;
-  background: #b3c2ab;
+  background: hsl(99, 16%, 72%);
   color: #1b1b1b;
   border-radius: 5px;
   cursor: pointer;
@@ -103,7 +103,6 @@ export const Button = styled.button`
   transition: background 0.3s ease;
 
   &:hover {
-    background: ${({ primary }) => (primary ? '#077bf1' : '#f26a2e')};
-    /* transform: translateY(-2px); */
+    background: hsl(99, 16%, 58%);
   }
 `;

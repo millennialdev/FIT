@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import { healthData } from '../src/sections/ideas/data';
 import { ContentContainer } from '../src/components';
 import {
   BlogPreview,
@@ -16,7 +17,7 @@ export default function Ideas() {
       <ContentContainer style={{ margin: '7.5em auto' }}>
         <BlogPreview />
         <LifeStylePreview />
-        <HealthPreview />
+        <HealthPreview data={healthData} />
       </ContentContainer>
       <EmailSignup />
     </>

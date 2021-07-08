@@ -36,10 +36,6 @@ export const CardContainer = styled.div`
   }
 `;
 
-export const Card = styled.div``;
-
-export const ImageContainer = styled.div``;
-
 export const Img = styled.img`
   border-radius: 5px;
   width: 100%;

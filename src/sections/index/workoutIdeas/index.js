@@ -2,8 +2,6 @@ import Link from 'next/link';
 import {
   WorkoutContainer,
   CardContainer,
-  Card,
-  ImageContainer,
   Img,
   P,
   By,
@@ -19,7 +17,7 @@ const WorkoutIdeas = ({ data }) => {
       <CardContainer>
         {data.cards.map((card) => {
           return (
-            <Card key={card.id}>
+            <div key={card.id}>
               <Link href={card.videoLink} passHref>
                 <PlayCircle isLight={card.lightButton} />
               </Link>
@@ -32,7 +30,7 @@ const WorkoutIdeas = ({ data }) => {
               <By>
                 By <Author>{card.author}</Author>
               </By>
-            </Card>
+            </div>
           );
         })}
       </CardContainer>

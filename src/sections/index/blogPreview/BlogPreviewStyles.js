@@ -118,10 +118,6 @@ export const StyledLink = styled.a`
       width: 160px;
     }
   }
-
-  /* @media screen and (max-width: 850px) {
-    margin: 0 auto;
-  } */
 `;
 
 export const H2 = styled.h2`

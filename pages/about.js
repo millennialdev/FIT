@@ -1,6 +1,12 @@
 import Head from 'next/head';
-import Image from 'next/image';
-import styles from '../styles/Home.module.css';
+import { ContentContainer } from '../src/components';
+import {
+  Mission,
+  Vision,
+  Impact,
+  CoreValues,
+  Team,
+} from '../src/sections/about';
 
 export default function About() {
   return (
@@ -8,7 +14,13 @@ export default function About() {
       <Head>
         <title>About | Functional Intense Training</title>
       </Head>
-      <h1>about</h1>
+      <ContentContainer style={{ margin: '6.5em auto' }}>
+        <Mission />
+        <Vision />
+        <Impact />
+        <CoreValues />
+        <Team />
+      </ContentContainer>
     </>
   );
 }

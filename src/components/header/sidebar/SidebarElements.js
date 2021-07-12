@@ -49,6 +49,14 @@ export const SidebarMenu = styled.ul`
   @media screen and (max-width: 480px) {
     grid-template-rows: repeat(7, 50px);
   }
+
+  @media screen and (max-height: 550px) {
+    grid-template-rows: repeat(7, 40px);
+  }
+
+  @media screen and (max-height: 420px) {
+    grid-template-rows: repeat(6, 40px);
+  }
 `;
 
 export const SidebarLink = styled.button`

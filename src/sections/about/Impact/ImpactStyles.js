@@ -56,7 +56,7 @@ export const CardContainer = styled.div`
   justify-content: flex-start;
   border-radius: 5px;
   border: 1.5px solid #f5f0f0;
-  max-width: 525px;
+  max-width: 475px;
 `;
 
 export const Image = styled.img`

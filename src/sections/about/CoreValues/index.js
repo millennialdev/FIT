@@ -1,10 +1,11 @@
-import { Container, H2, H3 } from './CoreStyles';
+import { Container, H2 } from './CoreStyles';
+import Slider from './Slider';
 
 const CoreValues = () => {
   return (
     <Container>
       <H2>Our core values</H2>
-      <H3>F: Focus</H3>
+      <Slider />
     </Container>
   );
 };

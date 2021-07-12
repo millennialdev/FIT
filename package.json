@@ -9,6 +9,7 @@
     "export": "next build"
   },
   "dependencies": {
+    "keen-slider": "^5.5.1",
     "next": "10.2.0",
     "next-images": "^1.7.0",
     "react": "17.0.2",

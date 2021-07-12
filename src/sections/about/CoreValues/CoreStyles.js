@@ -17,6 +17,10 @@ export const Container = styled.div`
 
 export const H2 = styled(Title)`
   text-align: center;
+
+  @media only screen and (max-width: 350px) {
+    text-align: left;
+  }
 `;
 
 export const H3 = styled(Subtitle)`

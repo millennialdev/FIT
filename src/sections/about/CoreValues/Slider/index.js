@@ -124,7 +124,7 @@ export default (props) => {
             </UL>
           </Div>
           <Div className='keen-slider__slide'>
-            <H3>N: Focus</H3>
+            <H3>N: Nobility</H3>
             <UL>
               <LI>
                 Heirloom sartorial iceland wayfarers twee 90's 8-bit meggings

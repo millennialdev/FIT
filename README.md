@@ -1,34 +1,37 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Functional Intense Training (FIT)
 
-## Getting Started
+Functional Intense Training (FIT) is a market place platform website, for connecting gym owners with personal trainers, and class attendees. The business model is similar to that of WeWork, but for gyms.
 
-First, run the development server:
+### Built with:
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+NextJS	Styled Components	MongoDB
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Live
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+<a href='https://functionalintense.training/' target='_blank'>Functional Intense Training (FIT)</a>
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## Project Screen Shot
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+<img src='./public/capture.jpg' >
 
-## Learn More
+## Installation and Setup Instructions
 
-To learn more about Next.js, take a look at the following resources:
+#### Example:  
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Clone down this repository. You will need `node` and `npm` installed globally on your machine.  
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Installation:
 
-## Deploy on Vercel
+`npm install`  
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+To Run Test Suite:  
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+`npm test`  
+
+To Start Server:
+
+`npm start`  
+
+To Visit App:
+
+`localhost:3000`

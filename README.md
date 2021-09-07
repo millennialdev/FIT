@@ -12,4 +12,4 @@ NextJS	Styled Components	MongoDB
 
 ## Project Screen Shot
 
-<img src='./public/capture.jpg' >
+<img src='./public/capture.jpg' />

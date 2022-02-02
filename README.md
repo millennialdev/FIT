@@ -4,7 +4,11 @@ Functional Intense Training (FIT) is a market place platform website, for connec
 
 ### Built with:
 
-NextJS	Styled Components	MongoDB
+NextJS Styled Components MongoDB
+
+### Package Manager
+
+NPM is used for this project. This project was built with Webpack for, so to make sure you do not run into any errors run the following command first `npm run build`, and then `npm run start` to make sure that it runs correctly.
 
 ## Live
 
